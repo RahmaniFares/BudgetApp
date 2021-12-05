@@ -91,7 +91,7 @@
                         android:id="@+id/dashmontant"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2.000.000"
+                        android:text="1400.000"
                         android:textColor="@color/white"
                         android:textSize="30dp"
                         android:textStyle="bold" />

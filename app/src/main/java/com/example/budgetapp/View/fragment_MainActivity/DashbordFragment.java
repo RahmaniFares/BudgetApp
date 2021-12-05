@@ -145,7 +145,7 @@ public class DashbordFragment extends Fragment {
                                 montantDash.setText(calculMontantActuelle(utilisateur.getSolde(),transactionArrayList));
 
                             } else {
-                                Toast.makeText(getContext(),"error",Toast.LENGTH_SHORT).show();
+                                Toast.  makeText(getContext(),"error",Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -218,9 +218,12 @@ public class DashbordFragment extends Fragment {
 
         ArrayList<PieEntry> entries1 = new ArrayList<>();
 
-        for(int i = 0; i < count; i++) {
-            entries1.add(new PieEntry((float) ((Math.random() * 60) + 40), "Cat " + (i+1)));
-        }
+
+            entries1.add(new PieEntry((float) ((Math.random() * 60) + 40), "réparation"));
+        entries1.add(new PieEntry((float) ((Math.random() * 60) + 40), "Nourriture"));
+        entries1.add(new PieEntry((float) ((Math.random() * 60) + 40), "Eléctricité"));
+        entries1.add(new PieEntry((float) ((Math.random() * 60) + 40), "Internet"));
+        entries1.add(new PieEntry((float) ((Math.random() * 60) + 40), "Salle de sport"));
 
         PieDataSet ds1 = new PieDataSet(entries1, "Categories");
         ds1.setColors(ColorTemplate.PASTEL_COLORS);
